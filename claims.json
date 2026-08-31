@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "name": "useInteractionManager",
+      "pattern": "\\| `hooks/useInteractionManager\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/hooks/useInteractionManager.js"
+      },
+      "paths": [
+        "README.md"
+      ],
+      "note": "The line count written in the README table, against the file itself."
+    },
+    {
+      "name": "useInteractiveModel",
+      "pattern": "\\| `hooks/useInteractiveModel\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/hooks/useInteractiveModel.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "useInteractiveMaterial",
+      "pattern": "\\| `hooks/useInteractiveMaterial\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/hooks/useInteractiveMaterial.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "useMaterialState",
+      "pattern": "\\| `hooks/useMaterialStatesave\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/hooks/useMaterialStatesave.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "simulationMaterial",
+      "pattern": "\\| `shaders/simulationMaterial\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/shaders/simulationMaterial.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "dofPointsMaterial",
+      "pattern": "\\| `shaders/dofPointsMaterial\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/shaders/dofPointsMaterial.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "baseMaterial",
+      "pattern": "\\| `materials/baseMaterial\\.js` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "src/materials/baseMaterial.js"
+      },
+      "paths": [
+        "README.md"
+      ]
+    }
+  ]
+}

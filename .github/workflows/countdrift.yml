@@ -1,0 +1,35 @@
+name: countdrift
+
+# The line counts in the README are written by hand. A fixed number next to a
+# file that changes is wrong in advance, so it gets checked instead of trusted.
+#
+# Nothing executes: the claims file uses the `lines` source, which reads.
+# No --allow-exec here, deliberately.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  counts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Fetch countdrift
+        run: |
+          curl -sSfL -o countdrift.py \
+            "https://raw.githubusercontent.com/langacorp/countdrift/main/countdrift.py" 
+
+      - name: Check the counts written in the README
+        run: python countdrift.py claims.json
