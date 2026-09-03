@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+type: software
+title: "langa-3d"
+abstract: "Seven reusable pieces from a React Three Fiber project: hooks for interactive 3D objects, two GPU shaders, a base material. No scene, no models, no dependencies beyond three and r3f."
+authors:
+  - name: "LANGA Corp. Srl"
+    city: Milan
+    country: IT
+    website: "https://langa.tv"
+repository-code: "https://github.com/langacorp/langa-3d"
+url: "https://github.com/langacorp/langa-3d"
+license: MIT
+version: "1.1.0"
+date-released: "2026-08-31"
