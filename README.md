@@ -1,5 +1,7 @@
 # langa-3d
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22299060-blue)](https://doi.org/10.5281/zenodo.22299060)
+
 Seven small pieces pulled out of a React Three Fiber project: hooks for making
 3D objects interactive, two GPU shaders, and a base material.
 
